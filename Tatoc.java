@@ -51,9 +51,8 @@ public class Tatoc {
 			driver.findElement(By.cssSelector("a")).click();
 	        List windowsList=new ArrayList(driver.getWindowHandles());
 	        String windows1= ((String)windowsList.get(1));
-	        //System.out.println(windows1);
 	        driver.switchTo().window(windows1);
-	        driver.findElement(By.id("name")).sendKeys("Shikha");
+	        driver.findElement(By.id("name")).sendKeys("Barkha");
 	        driver.findElement(By.id("submit")).click();
 	        String windows2=(String)(windowsList.get(0));
 	        driver.switchTo().window(windows2);
