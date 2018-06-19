@@ -60,7 +60,6 @@ public class Tatoc {
 	        
 	        driver.findElement(By.linkText("Generate Token")).click(); 
 	          String Token = driver.findElement(By.id("token")).getText();
-	          System.out.println(Token);
 	          String substring1=Token.substring(7);
 	          Cookie name = new Cookie("Token", substring1);
 	  		  driver.manage().addCookie(name);
