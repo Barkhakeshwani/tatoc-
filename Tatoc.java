@@ -53,7 +53,7 @@ public class Tatoc {
 	        String windows1= ((String)windowsList.get(1));
 	        driver.switchTo().window(windows1);
 	        driver.findElement(By.id("name")).sendKeys("Barkha");
-	        driver.findElement(By.id("Submit")).click();
+	        driver.findElement(By.id("submit")).click();
 	        String windows2=(String)(windowsList.get(0));
 	        driver.switchTo().window(windows2);
 	        driver.findElement(By.linkText("Proceed")).click(); 
